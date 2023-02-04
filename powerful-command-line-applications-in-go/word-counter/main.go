@@ -21,13 +21,10 @@ func count(r io.Reader, ls bool, bs bool) int {
 
 	if bs {
 		s.Split(bufio.ScanBytes)
-		fmt.Println("looking for bytes")
 	} else if ls {
 		s.Split(bufio.ScanLines)
-		fmt.Println("looking for lines")
 	} else {
 		s.Split(bufio.ScanWords)
-		fmt.Println("looking for words")
 	}
 
 	var c int
