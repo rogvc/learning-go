@@ -18,7 +18,7 @@ Build the executable:
 # From repository root
 cd powerful-command-line-applications-in-go/word-counter
 go test -v
-go build -o bin
+go build -o bin/
 ```
 
 Run it:
