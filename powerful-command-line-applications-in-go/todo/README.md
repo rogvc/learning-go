@@ -3,6 +3,7 @@
 Simple todo list program.
 
 Good program to learn:
+- Consuming packages
 - More in-depth flags
 - Creating and consuming files
 - Working JSON with Go
