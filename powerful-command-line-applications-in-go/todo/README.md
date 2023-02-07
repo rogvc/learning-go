@@ -8,6 +8,8 @@ Good program to learn:
 - Creating and consuming files
 - Working JSON with Go
 - Testing
+- Using interfaces
+- Using environment variables
 
 # How to use it
 
@@ -29,12 +31,21 @@ To see usage
 ./bin/todo --help
 ```
 
-To add a task, use the `-[a|add]` flag
+To add a task, use the `-[t|task]` flag
 
 ```bash
 # Make sure you're in the todo/cli/todo directory
-# ./bin/todo -a "<task>"
-./bin/todo -a "Something to do"
+# ./bin/todo -t "<task>"
+./bin/todo -t "Something to do"
+```
+
+To add a task with stdin, use the `-[a|add]` flag
+
+```bash
+# Make sure you're in the todo/cli/todo directory
+# ./bin/todo -a
+./bin/todo -a
+# Follow prompts to add tasks
 ```
 
 To list saved tasks, use the `-[l|list]` flag

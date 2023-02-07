@@ -73,3 +73,21 @@ func (ls *List) Get(fn string) error {
 
 	return json.Unmarshal(f, ls)
 }
+
+func (ls *List) String() string {
+	var out string
+	for i, t := range *ls {
+		out += fmt.Sprintf("(%d) ", i)
+		out += t.What
+		if t.Completed {
+			out += " [✅]"
+		} else {
+			out += " [ ]"
+		}
+		if i < len(*ls)-1 {
+			out += fmt.Sprintln()
+		}
+	}
+
+	return out
+}
